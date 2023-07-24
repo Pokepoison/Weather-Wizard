@@ -10,41 +10,18 @@ header {
 }
 
 .container {
-  max-width: 800px;
+  text-align: center;
+  background-color: rgb(24, 97, 255);
   margin: 0 auto;
+  padding: 0 10px;
+  border-color: #239aaf;
+  border-style: solid;
+ 
 }
 
-form {
-  display: flex;
+aside {
+ 
   margin-bottom: 20px;
 }
 
-input[type="text"] {
-  flex: 1;
-  padding: 5px;
-  font-size: 16px;
-}
-
-button {
-  padding: 5px 10px;
-  font-size: 16px;
-}
-
-#current-weather,
-#forecast {
-  margin-bottom: 20px;
-}
-
-#search-history {
-  border: 1px solid #ccc;
-  padding: 10px;
-}
-
-#history-list {
-  list-style: none;
-  padding: 0;
-}
-
-#history-list li {
-  cursor: pointer;
-}
+ 

@@ -1,28 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Weather Dashboard</title>
-  <link rel="stylesheet" href="./assets/style.css">
+   <title>Weather Dashboard</title>
+   <link rel="stylesheet" href="./assets/style.css"/>
 </head>
 
-<header>
-  <h1>Weather Dashboard</h1>
-<header>
+  <header>
+    <h1>Weather Dashboard</h1>
+  </header>
 
 <body>
   <div class="container">
-    <form id="search-form">
-      <input type="text" id="city-input" placeholder="Enter city name">
-      <button type="submit">Search</button>
-    </form>
-    <div id="current-weather"></div>
-    <div id="forecast"></div>
-    <div id="search-history">
-      <h3>Search History</h3>
-      <ul id="history-list"></ul>
+    <div class="row">
+      <aside class="search">
+        <h3>Search for a City:</h3>
+        <div class="input">
+          <input type="text" id="search-value" />
+          <button class="btn btn-primary" id="search-button"> search </button>
+        </div>
+        <ul class="history"></ul>
+      </aside>
+      <div class="container-forecast">
+        <div id="today"></div>
+        <div id="forecast"></div>
+      </div>
     </div>
   </div>
+   
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="./assets/script.js"></script>
 </body>
+
 </html>
+
